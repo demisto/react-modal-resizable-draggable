@@ -1,10 +1,10 @@
 {
-  "name": "react-modal-resizable-draggable",
+  "name": "demisto-react-modal-resizable-draggable",
   "version": "0.1.6",
-  "description": "This is a modal that support resizalbe and draggable function",
+  "description": "This is a modal that support resizable and draggable function",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wwan5803/react-modal-resizable-draggable.git"
+    "url": "https://github.com/demisto/react-modal-resizable-draggable.git"
   },
   "license": "MIT",
   "main": "build/main.js",
@@ -25,8 +25,7 @@
     "build": "webpack --env=production"
   },
   "author": {
-    "name": "Wesley Wang",
-    "email": "wesleywang5803@gmail.com"
+    "name": "Demisto"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.8",

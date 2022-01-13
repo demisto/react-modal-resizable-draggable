@@ -7,6 +7,7 @@ import Modal from './model';
 interface PropTypes {
 	top?: number;
 	left?: number;
+	dragMargin?: number;
 	initHeight?: number;
 	initWidth?: number;
 	minWidth?: number;
@@ -219,7 +220,7 @@ class FlexibleModal extends Component<PropTypes, StateTypes> {
 	}
 
 	render() {
-		const { isOpen, isMinimised, onRequestClose, onRequestMinimise, onRequestRecover, disableResize, className, onFocus } = this.props;
+		const { dragMargin, isOpen, isMinimised, onRequestClose, onRequestMinimise, onRequestRecover, disableResize, className, onFocus } = this.props;
 		return (
 			<div>
 				{/*this mask is a must*/}
@@ -250,7 +251,7 @@ class FlexibleModal extends Component<PropTypes, StateTypes> {
 						onMouseDown={this.onMouseDown}
 						className="flexible-modal-drag-area"
 						style={{
-							width: this.state.width
+							width: this.state.width - (dragMargin || 0)
 						}}
 						ref={(dragArea) => {
 							this.dragArea = dragArea;

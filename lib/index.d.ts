@@ -4,6 +4,7 @@ import Modal from './model';
 interface PropTypes {
     top?: number;
     left?: number;
+    dragMargin?: number;
     initHeight?: number;
     initWidth?: number;
     minWidth?: number;
